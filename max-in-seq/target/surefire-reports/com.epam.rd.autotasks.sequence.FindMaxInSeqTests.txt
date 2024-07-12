@@ -1,0 +1,44 @@
+-------------------------------------------------------------------------------
+Test set: com.epam.rd.autotasks.sequence.FindMaxInSeqTests
+-------------------------------------------------------------------------------
+Tests run: 10, Failures: 10, Errors: 0, Skipped: 0, Time elapsed: 0.041 s <<< FAILURE! - in com.epam.rd.autotasks.sequence.FindMaxInSeqTests
+testNegativeDuplicatedMaximum  Time elapsed: 0.025 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <-1> but was: <-2147483648>
+	at com.epam.rd.autotasks.sequence.FindMaxInSeqTests.testNegativeDuplicatedMaximum(FindMaxInSeqTests.java:62)
+
+testPolydigitNumbers  Time elapsed: 0.001 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <431> but was: <-2147483648>
+	at com.epam.rd.autotasks.sequence.FindMaxInSeqTests.testPolydigitNumbers(FindMaxInSeqTests.java:84)
+
+testSeq11  Time elapsed: 0.001 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <12> but was: <-2147483648>
+	at com.epam.rd.autotasks.sequence.FindMaxInSeqTests.testSeq11(FindMaxInSeqTests.java:18)
+
+testSeq12  Time elapsed: 0.001 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <9> but was: <-2147483648>
+	at com.epam.rd.autotasks.sequence.FindMaxInSeqTests.testSeq12(FindMaxInSeqTests.java:29)
+
+oneNumberSequence1  Time elapsed: 0.001 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <34567> but was: <-2147483648>
+	at com.epam.rd.autotasks.sequence.FindMaxInSeqTests.oneNumberSequence1(FindMaxInSeqTests.java:95)
+
+oneNumberSequence2  Time elapsed: 0.001 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <-934567> but was: <-2147483648>
+	at com.epam.rd.autotasks.sequence.FindMaxInSeqTests.oneNumberSequence2(FindMaxInSeqTests.java:106)
+
+testHavingIntegerMaxValue  Time elapsed: 0.001 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <2147483647> but was: <-2147483648>
+	at com.epam.rd.autotasks.sequence.FindMaxInSeqTests.testHavingIntegerMaxValue(FindMaxInSeqTests.java:118)
+
+testNegativeMaximum  Time elapsed: 0.001 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <-1> but was: <-2147483648>
+	at com.epam.rd.autotasks.sequence.FindMaxInSeqTests.testNegativeMaximum(FindMaxInSeqTests.java:51)
+
+testNegativeValues  Time elapsed: 0 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <4> but was: <-2147483648>
+	at com.epam.rd.autotasks.sequence.FindMaxInSeqTests.testNegativeValues(FindMaxInSeqTests.java:40)
+
+testDuplicatedMaximum  Time elapsed: 0 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <9> but was: <-2147483648>
+	at com.epam.rd.autotasks.sequence.FindMaxInSeqTests.testDuplicatedMaximum(FindMaxInSeqTests.java:73)
+

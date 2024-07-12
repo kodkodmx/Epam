@@ -1,0 +1,12 @@
+-------------------------------------------------------------------------------
+Test set: com.epam.rd.autotasks.sprintplanning.tickets.TicketTest
+-------------------------------------------------------------------------------
+Tests run: 2, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 0.044 s <<< FAILURE! - in com.epam.rd.autotasks.sprintplanning.tickets.TicketTest
+testTicketGeneralApi  Time elapsed: 0.031 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <false> but was: <true>
+	at com.epam.rd.autotasks.sprintplanning.tickets.TicketTest.testTicketGeneralApi(TicketTest.java:22)
+
+testComplete  Time elapsed: 0 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <false> but was: <true>
+	at com.epam.rd.autotasks.sprintplanning.tickets.TicketTest.testComplete(TicketTest.java:40)
+

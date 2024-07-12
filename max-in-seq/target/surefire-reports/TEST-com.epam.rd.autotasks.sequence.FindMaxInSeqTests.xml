@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="com.epam.rd.autotasks.sequence.FindMaxInSeqTests" time="0.041" tests="10" errors="0" skipped="0" failures="10">
+  <properties>
+    <property name="awt.toolkit" value="sun.awt.X11.XToolkit"/>
+    <property name="java.specification.version" value="11"/>
+    <property name="sun.cpu.isalist" value=""/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.class.path" value="/home/betoh/Epam/java/LearnBasicJava/src/max-in-seq/target/test-classes:/home/betoh/Epam/java/LearnBasicJava/src/max-in-seq/target/classes:/home/betoh/.m2/repository/org/junit/jupiter/junit-jupiter/5.7.1/junit-jupiter-5.7.1.jar:/home/betoh/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.7.1/junit-jupiter-api-5.7.1.jar:/home/betoh/.m2/repository/org/apiguardian/apiguardian-api/1.1.0/apiguardian-api-1.1.0.jar:/home/betoh/.m2/repository/org/opentest4j/opentest4j/1.2.0/opentest4j-1.2.0.jar:/home/betoh/.m2/repository/org/junit/platform/junit-platform-commons/1.7.1/junit-platform-commons-1.7.1.jar:/home/betoh/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.7.1/junit-jupiter-params-5.7.1.jar:/home/betoh/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.7.1/junit-jupiter-engine-5.7.1.jar:/home/betoh/.m2/repository/org/junit/platform/junit-platform-engine/1.7.1/junit-platform-engine-1.7.1.jar:"/>
+    <property name="java.vm.vendor" value="Ubuntu"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.vendor.url" value="https://ubuntu.com/"/>
+    <property name="user.timezone" value=""/>
+    <property name="java.vm.specification.version" value="11"/>
+    <property name="os.name" value="Linux"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.boot.library.path" value="/usr/lib/jvm/java-11-openjdk-amd64/lib"/>
+    <property name="sun.java.command" value="/home/betoh/Epam/java/LearnBasicJava/src/max-in-seq/target/surefire/surefirebooter1672807119160573167.jar /home/betoh/Epam/java/LearnBasicJava/src/max-in-seq/target/surefire 2024-06-09T18-17-44_741-jvmRun1 surefire7084918828290186914tmp surefire_015538838319319403478tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="test" value="com.epam.rd.autotasks.sequence.FindMaxInSeqTests"/>
+    <property name="surefire.test.class.path" value="/home/betoh/Epam/java/LearnBasicJava/src/max-in-seq/target/test-classes:/home/betoh/Epam/java/LearnBasicJava/src/max-in-seq/target/classes:/home/betoh/.m2/repository/org/junit/jupiter/junit-jupiter/5.7.1/junit-jupiter-5.7.1.jar:/home/betoh/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.7.1/junit-jupiter-api-5.7.1.jar:/home/betoh/.m2/repository/org/apiguardian/apiguardian-api/1.1.0/apiguardian-api-1.1.0.jar:/home/betoh/.m2/repository/org/opentest4j/opentest4j/1.2.0/opentest4j-1.2.0.jar:/home/betoh/.m2/repository/org/junit/platform/junit-platform-commons/1.7.1/junit-platform-commons-1.7.1.jar:/home/betoh/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.7.1/junit-jupiter-params-5.7.1.jar:/home/betoh/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.7.1/junit-jupiter-engine-5.7.1.jar:/home/betoh/.m2/repository/org/junit/platform/junit-platform-engine/1.7.1/junit-platform-engine-1.7.1.jar:"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="/home/betoh"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2024-01-16"/>
+    <property name="java.home" value="/usr/lib/jvm/java-11-openjdk-amd64"/>
+    <property name="file.separator" value="/"/>
+    <property name="basedir" value="/home/betoh/Epam/java/LearnBasicJava/src/max-in-seq"/>
+    <property name="java.vm.compressedOopsMode" value="32-bit"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.X11GraphicsEnvironment"/>
+    <property name="surefire.real.class.path" value="/home/betoh/Epam/java/LearnBasicJava/src/max-in-seq/target/surefire/surefirebooter1672807119160573167.jar"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="11.0.22+7-post-Ubuntu-0ubuntu222.04.1"/>
+    <property name="user.name" value="betoh"/>
+    <property name="path.separator" value=":"/>
+    <property name="os.version" value="5.15.133.1-microsoft-standard-WSL2"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="maven.ext.class.path" value="/home/betoh/.vscode-server/extensions/oracle.oracle-java-22.0.1/nbcode/java/maven-nblib/netbeans-eventspy.jar"/>
+    <property name="localRepository" value="/home/betoh/.m2/repository"/>
+    <property name="java.vendor.url.bug" value="https://bugs.launchpad.net/ubuntu/+source/openjdk-lts"/>
+    <property name="java.io.tmpdir" value="/tmp"/>
+    <property name="java.version" value="11.0.22"/>
+    <property name="user.dir" value="/home/betoh/Epam/java/LearnBasicJava/src/max-in-seq"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="java.awt.printerjob" value="sun.print.PSPrinterJob"/>
+    <property name="sun.os.patch.level" value="unknown"/>
+    <property name="java.library.path" value="/usr/java/packages/lib:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib"/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="java.vendor" value="Ubuntu"/>
+    <property name="java.vm.version" value="11.0.22+7-post-Ubuntu-0ubuntu222.04.1"/>
+    <property name="java.specification.maintenance.version" value="2"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="55.0"/>
+  </properties>
+  <testcase name="testNegativeDuplicatedMaximum" classname="com.epam.rd.autotasks.sequence.FindMaxInSeqTests" time="0.025">
+    <failure message="expected: &lt;-1&gt; but was: &lt;-2147483648&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: expected: <-1> but was: <-2147483648>
+	at com.epam.rd.autotasks.sequence.FindMaxInSeqTests.testNegativeDuplicatedMaximum(FindMaxInSeqTests.java:62)
+]]></failure>
+  </testcase>
+  <testcase name="testPolydigitNumbers" classname="com.epam.rd.autotasks.sequence.FindMaxInSeqTests" time="0.001">
+    <failure message="expected: &lt;431&gt; but was: &lt;-2147483648&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: expected: <431> but was: <-2147483648>
+	at com.epam.rd.autotasks.sequence.FindMaxInSeqTests.testPolydigitNumbers(FindMaxInSeqTests.java:84)
+]]></failure>
+  </testcase>
+  <testcase name="testSeq11" classname="com.epam.rd.autotasks.sequence.FindMaxInSeqTests" time="0.001">
+    <failure message="expected: &lt;12&gt; but was: &lt;-2147483648&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: expected: <12> but was: <-2147483648>
+	at com.epam.rd.autotasks.sequence.FindMaxInSeqTests.testSeq11(FindMaxInSeqTests.java:18)
+]]></failure>
+  </testcase>
+  <testcase name="testSeq12" classname="com.epam.rd.autotasks.sequence.FindMaxInSeqTests" time="0.001">
+    <failure message="expected: &lt;9&gt; but was: &lt;-2147483648&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: expected: <9> but was: <-2147483648>
+	at com.epam.rd.autotasks.sequence.FindMaxInSeqTests.testSeq12(FindMaxInSeqTests.java:29)
+]]></failure>
+  </testcase>
+  <testcase name="oneNumberSequence1" classname="com.epam.rd.autotasks.sequence.FindMaxInSeqTests" time="0.001">
+    <failure message="expected: &lt;34567&gt; but was: &lt;-2147483648&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: expected: <34567> but was: <-2147483648>
+	at com.epam.rd.autotasks.sequence.FindMaxInSeqTests.oneNumberSequence1(FindMaxInSeqTests.java:95)
+]]></failure>
+  </testcase>
+  <testcase name="oneNumberSequence2" classname="com.epam.rd.autotasks.sequence.FindMaxInSeqTests" time="0.001">
+    <failure message="expected: &lt;-934567&gt; but was: &lt;-2147483648&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: expected: <-934567> but was: <-2147483648>
+	at com.epam.rd.autotasks.sequence.FindMaxInSeqTests.oneNumberSequence2(FindMaxInSeqTests.java:106)
+]]></failure>
+  </testcase>
+  <testcase name="testHavingIntegerMaxValue" classname="com.epam.rd.autotasks.sequence.FindMaxInSeqTests" time="0.001">
+    <failure message="expected: &lt;2147483647&gt; but was: &lt;-2147483648&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: expected: <2147483647> but was: <-2147483648>
+	at com.epam.rd.autotasks.sequence.FindMaxInSeqTests.testHavingIntegerMaxValue(FindMaxInSeqTests.java:118)
+]]></failure>
+  </testcase>
+  <testcase name="testNegativeMaximum" classname="com.epam.rd.autotasks.sequence.FindMaxInSeqTests" time="0.001">
+    <failure message="expected: &lt;-1&gt; but was: &lt;-2147483648&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: expected: <-1> but was: <-2147483648>
+	at com.epam.rd.autotasks.sequence.FindMaxInSeqTests.testNegativeMaximum(FindMaxInSeqTests.java:51)
+]]></failure>
+  </testcase>
+  <testcase name="testNegativeValues" classname="com.epam.rd.autotasks.sequence.FindMaxInSeqTests" time="0">
+    <failure message="expected: &lt;4&gt; but was: &lt;-2147483648&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: expected: <4> but was: <-2147483648>
+	at com.epam.rd.autotasks.sequence.FindMaxInSeqTests.testNegativeValues(FindMaxInSeqTests.java:40)
+]]></failure>
+  </testcase>
+  <testcase name="testDuplicatedMaximum" classname="com.epam.rd.autotasks.sequence.FindMaxInSeqTests" time="0">
+    <failure message="expected: &lt;9&gt; but was: &lt;-2147483648&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: expected: <9> but was: <-2147483648>
+	at com.epam.rd.autotasks.sequence.FindMaxInSeqTests.testDuplicatedMaximum(FindMaxInSeqTests.java:73)
+]]></failure>
+  </testcase>
+</testsuite>

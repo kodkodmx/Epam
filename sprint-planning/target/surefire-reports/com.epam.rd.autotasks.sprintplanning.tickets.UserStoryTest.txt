@@ -1,0 +1,24 @@
+-------------------------------------------------------------------------------
+Test set: com.epam.rd.autotasks.sprintplanning.tickets.UserStoryTest
+-------------------------------------------------------------------------------
+Tests run: 6, Failures: 5, Errors: 0, Skipped: 0, Time elapsed: 0.068 s <<< FAILURE! - in com.epam.rd.autotasks.sprintplanning.tickets.UserStoryTest
+testToString  Time elapsed: 0.051 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <[US 1] User Story 1> but was: <[US 1] User Story 1 (11 points)>
+	at com.epam.rd.autotasks.sprintplanning.tickets.UserStoryTest.testToString(UserStoryTest.java:126)
+
+testSimpleComplete  Time elapsed: 0.003 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <true> but was: <false>
+	at com.epam.rd.autotasks.sprintplanning.tickets.UserStoryTest.testSimpleComplete(UserStoryTest.java:76)
+
+testGeneralApi  Time elapsed: 0.001 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <true> but was: <false>
+	at com.epam.rd.autotasks.sprintplanning.tickets.UserStoryTest.testGeneralApi(UserStoryTest.java:29)
+
+testCompleteWithDependencies  Time elapsed: 0.001 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <true> but was: <false>
+	at com.epam.rd.autotasks.sprintplanning.tickets.UserStoryTest.testCompleteWithDependencies(UserStoryTest.java:107)
+
+testDependenciesDefensiveCopy  Time elapsed: 0.001 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <true> but was: <false>
+	at com.epam.rd.autotasks.sprintplanning.tickets.UserStoryTest.testDependenciesDefensiveCopy(UserStoryTest.java:63)
+
