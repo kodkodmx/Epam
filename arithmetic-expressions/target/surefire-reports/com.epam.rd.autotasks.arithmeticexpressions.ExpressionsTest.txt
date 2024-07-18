@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: com.epam.rd.autotasks.arithmeticexpressions.ExpressionsTest
 -------------------------------------------------------------------------------
-Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.068 s - in com.epam.rd.autotasks.arithmeticexpressions.ExpressionsTest
+Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.052 s - in com.epam.rd.autotasks.arithmeticexpressions.ExpressionsTest
