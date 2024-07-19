@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="com.rpam.rd.autotasks.CatchEmAllTest" time="0.038" tests="7" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="com.rpam.rd.autotasks.CatchEmAllTest" time="0.028" tests="7" errors="0" skipped="0" failures="0">
   <properties>
     <property name="awt.toolkit" value="sun.awt.X11.XToolkit"/>
     <property name="java.specification.version" value="11"/>
     <property name="sun.cpu.isalist" value=""/>
     <property name="sun.jnu.encoding" value="UTF-8"/>
-    <property name="java.class.path" value="/home/betoh/AreaTrabajo/catch-em-all/target/test-classes:/home/betoh/AreaTrabajo/catch-em-all/target/classes:/home/betoh/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.6.2/junit-jupiter-engine-5.6.2.jar:/home/betoh/.m2/repository/org/apiguardian/apiguardian-api/1.1.0/apiguardian-api-1.1.0.jar:/home/betoh/.m2/repository/org/junit/platform/junit-platform-engine/1.6.2/junit-platform-engine-1.6.2.jar:/home/betoh/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.6.2/junit-jupiter-api-5.6.2.jar:/home/betoh/.m2/repository/org/opentest4j/opentest4j/1.2.0/opentest4j-1.2.0.jar:/home/betoh/.m2/repository/org/junit/platform/junit-platform-commons/1.6.2/junit-platform-commons-1.6.2.jar:/home/betoh/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.6.2/junit-jupiter-params-5.6.2.jar:"/>
+    <property name="java.class.path" value="/home/betoh/Epam/catch-em-all/target/test-classes:/home/betoh/Epam/catch-em-all/target/classes:/home/betoh/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.6.2/junit-jupiter-engine-5.6.2.jar:/home/betoh/.m2/repository/org/apiguardian/apiguardian-api/1.1.0/apiguardian-api-1.1.0.jar:/home/betoh/.m2/repository/org/junit/platform/junit-platform-engine/1.6.2/junit-platform-engine-1.6.2.jar:/home/betoh/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.6.2/junit-jupiter-api-5.6.2.jar:/home/betoh/.m2/repository/org/opentest4j/opentest4j/1.2.0/opentest4j-1.2.0.jar:/home/betoh/.m2/repository/org/junit/platform/junit-platform-commons/1.6.2/junit-platform-commons-1.6.2.jar:/home/betoh/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.6.2/junit-jupiter-params-5.6.2.jar:"/>
     <property name="java.vm.vendor" value="Ubuntu"/>
     <property name="sun.arch.data.model" value="64"/>
     <property name="java.vendor.url" value="https://ubuntu.com/"/>
@@ -14,10 +14,10 @@
     <property name="os.name" value="Linux"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="sun.boot.library.path" value="/usr/lib/jvm/java-11-openjdk-amd64/lib"/>
-    <property name="sun.java.command" value="/home/betoh/AreaTrabajo/catch-em-all/target/surefire/surefirebooter15301545891134333695.jar /home/betoh/AreaTrabajo/catch-em-all/target/surefire 2024-07-18T23-00-30_462-jvmRun1 surefire10260928041537331850tmp surefire_04614252509935724558tmp"/>
+    <property name="sun.java.command" value="/home/betoh/Epam/catch-em-all/target/surefire/surefirebooter12123252163305050719.jar /home/betoh/Epam/catch-em-all/target/surefire 2024-07-18T23-04-47_490-jvmRun1 surefire7512925067625827707tmp surefire_05547365311691276695tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="test" value="com.rpam.rd.autotasks.CatchEmAllTest"/>
-    <property name="surefire.test.class.path" value="/home/betoh/AreaTrabajo/catch-em-all/target/test-classes:/home/betoh/AreaTrabajo/catch-em-all/target/classes:/home/betoh/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.6.2/junit-jupiter-engine-5.6.2.jar:/home/betoh/.m2/repository/org/apiguardian/apiguardian-api/1.1.0/apiguardian-api-1.1.0.jar:/home/betoh/.m2/repository/org/junit/platform/junit-platform-engine/1.6.2/junit-platform-engine-1.6.2.jar:/home/betoh/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.6.2/junit-jupiter-api-5.6.2.jar:/home/betoh/.m2/repository/org/opentest4j/opentest4j/1.2.0/opentest4j-1.2.0.jar:/home/betoh/.m2/repository/org/junit/platform/junit-platform-commons/1.6.2/junit-platform-commons-1.6.2.jar:/home/betoh/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.6.2/junit-jupiter-params-5.6.2.jar:"/>
+    <property name="surefire.test.class.path" value="/home/betoh/Epam/catch-em-all/target/test-classes:/home/betoh/Epam/catch-em-all/target/classes:/home/betoh/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.6.2/junit-jupiter-engine-5.6.2.jar:/home/betoh/.m2/repository/org/apiguardian/apiguardian-api/1.1.0/apiguardian-api-1.1.0.jar:/home/betoh/.m2/repository/org/junit/platform/junit-platform-engine/1.6.2/junit-platform-engine-1.6.2.jar:/home/betoh/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.6.2/junit-jupiter-api-5.6.2.jar:/home/betoh/.m2/repository/org/opentest4j/opentest4j/1.2.0/opentest4j-1.2.0.jar:/home/betoh/.m2/repository/org/junit/platform/junit-platform-commons/1.6.2/junit-platform-commons-1.6.2.jar:/home/betoh/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.6.2/junit-jupiter-params-5.6.2.jar:"/>
     <property name="sun.cpu.endian" value="little"/>
     <property name="user.home" value="/home/betoh"/>
     <property name="user.language" value="en"/>
@@ -25,13 +25,13 @@
     <property name="java.version.date" value="2024-01-16"/>
     <property name="java.home" value="/usr/lib/jvm/java-11-openjdk-amd64"/>
     <property name="file.separator" value="/"/>
-    <property name="basedir" value="/home/betoh/AreaTrabajo/catch-em-all"/>
+    <property name="basedir" value="/home/betoh/Epam/catch-em-all"/>
     <property name="java.vm.compressedOopsMode" value="32-bit"/>
     <property name="line.separator" value="&#10;"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.awt.graphicsenv" value="sun.awt.X11GraphicsEnvironment"/>
-    <property name="surefire.real.class.path" value="/home/betoh/AreaTrabajo/catch-em-all/target/surefire/surefirebooter15301545891134333695.jar"/>
+    <property name="surefire.real.class.path" value="/home/betoh/Epam/catch-em-all/target/surefire/surefirebooter12123252163305050719.jar"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="11.0.22+7-post-Ubuntu-0ubuntu222.04.1"/>
     <property name="user.name" value="betoh"/>
@@ -45,7 +45,7 @@
     <property name="java.vendor.url.bug" value="https://bugs.launchpad.net/ubuntu/+source/openjdk-lts"/>
     <property name="java.io.tmpdir" value="/tmp"/>
     <property name="java.version" value="11.0.22"/>
-    <property name="user.dir" value="/home/betoh/AreaTrabajo/catch-em-all"/>
+    <property name="user.dir" value="/home/betoh/Epam/catch-em-all"/>
     <property name="os.arch" value="amd64"/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
     <property name="java.awt.printerjob" value="sun.print.PSPrinterJob"/>
@@ -58,10 +58,10 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="55.0"/>
   </properties>
-  <testcase name="testFNF" classname="com.rpam.rd.autotasks.CatchEmAllTest" time="0.021"/>
-  <testcase name="testNFE" classname="com.rpam.rd.autotasks.CatchEmAllTest" time="0.001"/>
-  <testcase name="testUEE" classname="com.rpam.rd.autotasks.CatchEmAllTest" time="0"/>
-  <testcase name="testUOE" classname="com.rpam.rd.autotasks.CatchEmAllTest" time="0"/>
+  <testcase name="testFNF" classname="com.rpam.rd.autotasks.CatchEmAllTest" time="0.017"/>
+  <testcase name="testNFE" classname="com.rpam.rd.autotasks.CatchEmAllTest" time="0"/>
+  <testcase name="testUEE" classname="com.rpam.rd.autotasks.CatchEmAllTest" time="0.001"/>
+  <testcase name="testUOE" classname="com.rpam.rd.autotasks.CatchEmAllTest" time="0.001"/>
   <testcase name="testArithmetic" classname="com.rpam.rd.autotasks.CatchEmAllTest" time="0"/>
   <testcase name="testIOOBE" classname="com.rpam.rd.autotasks.CatchEmAllTest" time="0"/>
   <testcase name="testIO" classname="com.rpam.rd.autotasks.CatchEmAllTest" time="0"/>
