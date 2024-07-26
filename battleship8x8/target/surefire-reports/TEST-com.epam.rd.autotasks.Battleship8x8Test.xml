@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.epam.rd.autotasks.Battleship8x8Test" time="0.075" tests="6" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="awt.toolkit" value="sun.awt.X11.XToolkit"/>
+    <property name="java.specification.version" value="11"/>
+    <property name="sun.cpu.isalist" value=""/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.class.path" value="/home/betoh/AreaTrabajo/battleship8x8/target/test-classes:/home/betoh/AreaTrabajo/battleship8x8/target/classes:/home/betoh/.m2/repository/org/junit/jupiter/junit-jupiter/5.7.2/junit-jupiter-5.7.2.jar:/home/betoh/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.7.2/junit-jupiter-api-5.7.2.jar:/home/betoh/.m2/repository/org/apiguardian/apiguardian-api/1.1.0/apiguardian-api-1.1.0.jar:/home/betoh/.m2/repository/org/opentest4j/opentest4j/1.2.0/opentest4j-1.2.0.jar:/home/betoh/.m2/repository/org/junit/platform/junit-platform-commons/1.7.2/junit-platform-commons-1.7.2.jar:/home/betoh/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.7.2/junit-jupiter-params-5.7.2.jar:/home/betoh/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.7.2/junit-jupiter-engine-5.7.2.jar:/home/betoh/.m2/repository/org/junit/platform/junit-platform-engine/1.7.2/junit-platform-engine-1.7.2.jar:/home/betoh/.m2/repository/fr/inria/gforge/spoon/spoon-core/9.0.0/spoon-core-9.0.0.jar:/home/betoh/.m2/repository/org/eclipse/jdt/org.eclipse.jdt.core/3.25.0/org.eclipse.jdt.core-3.25.0.jar:/home/betoh/.m2/repository/com/martiansoftware/jsap/2.1/jsap-2.1.jar:/home/betoh/.m2/repository/org/slf4j/slf4j-api/1.7.30/slf4j-api-1.7.30.jar:/home/betoh/.m2/repository/commons-io/commons-io/2.8.0/commons-io-2.8.0.jar:/home/betoh/.m2/repository/org/apache/maven/maven-model/3.6.3/maven-model-3.6.3.jar:/home/betoh/.m2/repository/org/codehaus/plexus/plexus-utils/3.2.1/plexus-utils-3.2.1.jar:/home/betoh/.m2/repository/org/apache/commons/commons-lang3/3.12.0/commons-lang3-3.12.0.jar:/home/betoh/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.12.2/jackson-databind-2.12.2.jar:/home/betoh/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.12.2/jackson-annotations-2.12.2.jar:/home/betoh/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.12.2/jackson-core-2.12.2.jar:/home/betoh/.m2/repository/org/apache/commons/commons-compress/1.20/commons-compress-1.20.jar:/home/betoh/.m2/repository/org/apache/maven/shared/maven-invoker/3.1.0/maven-invoker-3.1.0.jar:/home/betoh/.m2/repository/org/apache/maven/shared/maven-shared-utils/3.3.3/maven-shared-utils-3.3.3.jar:/home/betoh/.m2/repository/javax/inject/javax.inject/1/javax.inject-1.jar:"/>
+    <property name="java.vm.vendor" value="Ubuntu"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.vendor.url" value="https://ubuntu.com/"/>
+    <property name="user.timezone" value=""/>
+    <property name="java.vm.specification.version" value="11"/>
+    <property name="os.name" value="Linux"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.boot.library.path" value="/usr/lib/jvm/java-11-openjdk-amd64/lib"/>
+    <property name="sun.java.command" value="/home/betoh/AreaTrabajo/battleship8x8/target/surefire/surefirebooter17175459458206451196.jar /home/betoh/AreaTrabajo/battleship8x8/target/surefire 2024-07-25T22-02-03_660-jvmRun1 surefire13549518567229648627tmp surefire_018065729989046079184tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="test" value="com.epam.rd.autotasks.Battleship8x8Test"/>
+    <property name="surefire.test.class.path" value="/home/betoh/AreaTrabajo/battleship8x8/target/test-classes:/home/betoh/AreaTrabajo/battleship8x8/target/classes:/home/betoh/.m2/repository/org/junit/jupiter/junit-jupiter/5.7.2/junit-jupiter-5.7.2.jar:/home/betoh/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.7.2/junit-jupiter-api-5.7.2.jar:/home/betoh/.m2/repository/org/apiguardian/apiguardian-api/1.1.0/apiguardian-api-1.1.0.jar:/home/betoh/.m2/repository/org/opentest4j/opentest4j/1.2.0/opentest4j-1.2.0.jar:/home/betoh/.m2/repository/org/junit/platform/junit-platform-commons/1.7.2/junit-platform-commons-1.7.2.jar:/home/betoh/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.7.2/junit-jupiter-params-5.7.2.jar:/home/betoh/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.7.2/junit-jupiter-engine-5.7.2.jar:/home/betoh/.m2/repository/org/junit/platform/junit-platform-engine/1.7.2/junit-platform-engine-1.7.2.jar:/home/betoh/.m2/repository/fr/inria/gforge/spoon/spoon-core/9.0.0/spoon-core-9.0.0.jar:/home/betoh/.m2/repository/org/eclipse/jdt/org.eclipse.jdt.core/3.25.0/org.eclipse.jdt.core-3.25.0.jar:/home/betoh/.m2/repository/com/martiansoftware/jsap/2.1/jsap-2.1.jar:/home/betoh/.m2/repository/org/slf4j/slf4j-api/1.7.30/slf4j-api-1.7.30.jar:/home/betoh/.m2/repository/commons-io/commons-io/2.8.0/commons-io-2.8.0.jar:/home/betoh/.m2/repository/org/apache/maven/maven-model/3.6.3/maven-model-3.6.3.jar:/home/betoh/.m2/repository/org/codehaus/plexus/plexus-utils/3.2.1/plexus-utils-3.2.1.jar:/home/betoh/.m2/repository/org/apache/commons/commons-lang3/3.12.0/commons-lang3-3.12.0.jar:/home/betoh/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.12.2/jackson-databind-2.12.2.jar:/home/betoh/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.12.2/jackson-annotations-2.12.2.jar:/home/betoh/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.12.2/jackson-core-2.12.2.jar:/home/betoh/.m2/repository/org/apache/commons/commons-compress/1.20/commons-compress-1.20.jar:/home/betoh/.m2/repository/org/apache/maven/shared/maven-invoker/3.1.0/maven-invoker-3.1.0.jar:/home/betoh/.m2/repository/org/apache/maven/shared/maven-shared-utils/3.3.3/maven-shared-utils-3.3.3.jar:/home/betoh/.m2/repository/javax/inject/javax.inject/1/javax.inject-1.jar:"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="/home/betoh"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2024-01-16"/>
+    <property name="java.home" value="/usr/lib/jvm/java-11-openjdk-amd64"/>
+    <property name="file.separator" value="/"/>
+    <property name="basedir" value="/home/betoh/AreaTrabajo/battleship8x8"/>
+    <property name="java.vm.compressedOopsMode" value="32-bit"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.X11GraphicsEnvironment"/>
+    <property name="surefire.real.class.path" value="/home/betoh/AreaTrabajo/battleship8x8/target/surefire/surefirebooter17175459458206451196.jar"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="11.0.22+7-post-Ubuntu-0ubuntu222.04.1"/>
+    <property name="user.name" value="betoh"/>
+    <property name="path.separator" value=":"/>
+    <property name="os.version" value="5.15.133.1-microsoft-standard-WSL2"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="maven.ext.class.path" value="/home/betoh/.vscode-server/extensions/oracle.oracle-java-22.0.1/nbcode/java/maven-nblib/netbeans-eventspy.jar"/>
+    <property name="localRepository" value="/home/betoh/.m2/repository"/>
+    <property name="java.vendor.url.bug" value="https://bugs.launchpad.net/ubuntu/+source/openjdk-lts"/>
+    <property name="java.io.tmpdir" value="/tmp"/>
+    <property name="java.version" value="11.0.22"/>
+    <property name="user.dir" value="/home/betoh/AreaTrabajo/battleship8x8"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="java.awt.printerjob" value="sun.print.PSPrinterJob"/>
+    <property name="sun.os.patch.level" value="unknown"/>
+    <property name="java.library.path" value="/usr/java/packages/lib:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib"/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="java.vendor" value="Ubuntu"/>
+    <property name="java.vm.version" value="11.0.22+7-post-Ubuntu-0ubuntu222.04.1"/>
+    <property name="java.specification.maintenance.version" value="2"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="55.0"/>
+  </properties>
+  <testcase name="testRegularCases{long, List, String, List}[1]" classname="com.epam.rd.autotasks.Battleship8x8Test" time="0.032"/>
+  <testcase name="testRegularCases{long, List, String, List}[2]" classname="com.epam.rd.autotasks.Battleship8x8Test" time="0.001"/>
+  <testcase name="testRegularCases{long, List, String, List}[3]" classname="com.epam.rd.autotasks.Battleship8x8Test" time="0.001"/>
+  <testcase name="testRegularCases{long, List, String, List}[4]" classname="com.epam.rd.autotasks.Battleship8x8Test" time="0.001"/>
+  <testcase name="testRegularCases{long, List, String, List}[5]" classname="com.epam.rd.autotasks.Battleship8x8Test" time="0.001"/>
+  <testcase name="testRegularCases{long, List, String, List}[6]" classname="com.epam.rd.autotasks.Battleship8x8Test" time="0.001"/>
+</testsuite>
