@@ -1,60 +1,105 @@
+package com.epam.rd.autocode.queue;
+
+import java.util.ArrayList;
+import java.util.List;
+
 public class Shop {
-    // Assuming other necessary fields and methods are present
+    private List<CashBox> cashBoxes;
 
-    // Method to process a tick of time
-    public void tact() {
-        for (int i = 0; i < cashBoxes.length; i++) {
-            CashBox box = cashBoxes[i];
-            switch (box.getState()) {
-                case ENABLED:
-                    // Process buyers in the box
-                    box.processBuyers();
-                    break;
-                case IS_CLOSING:
-                    // Handle closing state: finish processing buyers, then close the box
-                    box.processBuyers();
-                    box.setState(State.CLOSED);
-                    break;
-                case CLOSED:
-                    // Closed boxes should not process buyers
-                    break;
-            }
+    public Shop(int count) {
+        cashBoxes = new ArrayList<>();
+        for (int i = 0; i < count; i++) {
+            cashBoxes.add(new CashBox(i));
         }
     }
 
-    // Example method to get the state string representation
-    public String getState() {
-        StringBuilder sb = new StringBuilder();
-        for (CashBox box : cashBoxes) {
-            switch (box.getState()) {
-                case ENABLED:
-                    sb.append("+");
-                    break;
-                case IS_CLOSING:
-                    sb.append("|");
-                    break;
-                case CLOSED:
-                    sb.append("-");
-                    break;
-            }
-            sb.append(box.getContent()); // Add content representation of each box
-        }
-        return sb.toString();
+    public int getCashBoxCount() {
+        return cashBoxes.size();
     }
 
-    // Method to add a buyer to the next available cash box
     public void addBuyer(Buyer buyer) {
-        for (CashBox box : cashBoxes) {
-            if (box.getState() == State.ENABLED) {
-                box.addBuyer(buyer);
-                return;
+        CashBox targetCashBox = null;
+        int minQueueSize = Integer.MAX_VALUE;
+    
+        for (CashBox cashBox : cashBoxes) {
+            if (cashBox.inState(CashBox.State.ENABLED) && cashBox.getQueue().size() < minQueueSize) {
+                minQueueSize = cashBox.getQueue().size();
+                targetCashBox = cashBox;
             }
         }
-        // Handle case where no enabled boxes are available
+    
+        if (targetCashBox != null) {
+            targetCashBox.addLast(buyer);
+        }
+    }    
+
+    public void tact() {
+        for (CashBox cashBox : cashBoxes) {
+            if (!cashBox.getQueue().isEmpty()) {
+                cashBox.serveBuyer();
+            }
+        }
+        balance();
+    }
+    
+    private void balance() {
+        List<Buyer> defectorBuyers = new ArrayList<>();
+        int[] minMaxSize = getMinMaxSize(cashBoxes);
+        int minSize = minMaxSize[0];
+        int maxSize = minMaxSize[1];
+    
+        for (CashBox cashBox : cashBoxes) {
+            if (cashBox.inState(CashBox.State.ENABLED)) {
+                while (cashBox.getQueue().size() > maxSize) {
+                    defectorBuyers.add(cashBox.removeLast());
+                }
+            }
+        }
+    
+        for (CashBox cashBox : cashBoxes) {
+            if (cashBox.inState(CashBox.State.ENABLED)) {
+                while (cashBox.getQueue().size() < minSize && !defectorBuyers.isEmpty()) {
+                    cashBox.addLast(defectorBuyers.remove(0));
+                }
+            }
+        }
     }
 
-    // Method to set the state of a cash box
-    public void setCashBoxState(int index, State state) {
-        cashBoxes[index].setState(state);
+    public static int[] getMinMaxSize(List<CashBox> cashBoxes) {
+        int enabledCount = 0;
+        int totalBuyers = 0;
+
+        for (CashBox cashBox : cashBoxes) {
+            if (cashBox.inState(CashBox.State.ENABLED)) {
+                enabledCount++;
+                totalBuyers += cashBox.getQueue().size();
+            }
+        }
+
+        int minSize = enabledCount > 0 ? totalBuyers / enabledCount : 0;
+        int maxSize = minSize + (totalBuyers % enabledCount > 0 ? 1 : 0);
+        return new int[] {minSize, maxSize};
+    }
+
+    public void setCashBoxState(int cashBoxNumber, CashBox.State state) {
+        CashBox cashBox = getCashBox(cashBoxNumber);
+        if (cashBox != null) {
+            cashBox.setState(state);
+        }
+    }
+
+    public CashBox getCashBox(int cashBoxNumber) {
+        return cashBoxNumber >= 0 && cashBoxNumber < cashBoxes.size() ? cashBoxes.get(cashBoxNumber) : null;
+    }
+
+    public void print() {
+        StringBuilder output = new StringBuilder();
+        for (int i = 0; i < cashBoxes.size(); i++) {
+            output.append(cashBoxes.get(i).toString());
+            if (i < cashBoxes.size() - 1) {
+                output.append(System.lineSeparator());
+            }
+        }
+        System.out.println(output.toString());
     }
 }
