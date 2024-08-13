@@ -1,0 +1,20 @@
+-------------------------------------------------------------------------------
+Test set: com.epam.rd.autotasks.collections.map.ComplianceTest
+-------------------------------------------------------------------------------
+Tests run: 5, Failures: 0, Errors: 4, Skipped: 0, Time elapsed: 1.789 s <<< FAILURE! - in com.epam.rd.autotasks.collections.map.ComplianceTest
+testComplianceFori  Time elapsed: 0.034 s  <<< ERROR!
+java.lang.ClassCastException: class spoon.reflect.factory.ModuleFactory$CtUnnamedModule cannot be cast to class spoon.reflect.code.CtFor (spoon.reflect.factory.ModuleFactory$CtUnnamedModule and spoon.reflect.code.CtFor are in unnamed module of loader 'app')
+	at com.epam.rd.autotasks.collections.map.ComplianceTest.testComplianceFori(ComplianceTest.java:171)
+
+testComplianceLambda  Time elapsed: 0.002 s  <<< ERROR!
+java.lang.ClassCastException: class spoon.reflect.factory.ModuleFactory$CtUnnamedModule cannot be cast to class spoon.reflect.code.CtLambda (spoon.reflect.factory.ModuleFactory$CtUnnamedModule and spoon.reflect.code.CtLambda are in unnamed module of loader 'app')
+	at com.epam.rd.autotasks.collections.map.ComplianceTest.testComplianceLambda(ComplianceTest.java:163)
+
+testNoMorePublicMethods  Time elapsed: 0.005 s  <<< ERROR!
+java.lang.ClassCastException: class spoon.reflect.factory.ModuleFactory$CtUnnamedModule cannot be cast to class spoon.reflect.declaration.CtType (spoon.reflect.factory.ModuleFactory$CtUnnamedModule and spoon.reflect.declaration.CtType are in unnamed module of loader 'app')
+	at com.epam.rd.autotasks.collections.map.ComplianceTest.testNoMorePublicMethods(ComplianceTest.java:127)
+
+testNoMoreFieldsInImpl  Time elapsed: 0.004 s  <<< ERROR!
+java.lang.ClassCastException: class spoon.reflect.factory.ModuleFactory$CtUnnamedModule cannot be cast to class spoon.reflect.declaration.CtType (spoon.reflect.factory.ModuleFactory$CtUnnamedModule and spoon.reflect.declaration.CtType are in unnamed module of loader 'app')
+	at com.epam.rd.autotasks.collections.map.ComplianceTest.testNoMoreFieldsInImpl(ComplianceTest.java:111)
+
