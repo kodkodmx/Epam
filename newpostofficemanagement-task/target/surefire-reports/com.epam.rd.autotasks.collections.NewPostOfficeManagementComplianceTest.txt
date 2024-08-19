@@ -1,0 +1,20 @@
+-------------------------------------------------------------------------------
+Test set: com.epam.rd.autotasks.collections.NewPostOfficeManagementComplianceTest
+-------------------------------------------------------------------------------
+Tests run: 4, Failures: 0, Errors: 4, Skipped: 0, Time elapsed: 1.01 s <<< FAILURE! - in com.epam.rd.autotasks.collections.NewPostOfficeManagementComplianceTest
+testComplianceLambda  Time elapsed: 0.012 s  <<< ERROR!
+java.lang.ClassCastException: class spoon.reflect.factory.ModuleFactory$CtUnnamedModule cannot be cast to class spoon.reflect.code.CtLambda (spoon.reflect.factory.ModuleFactory$CtUnnamedModule and spoon.reflect.code.CtLambda are in unnamed module of loader 'app')
+	at com.epam.rd.autotasks.collections.NewPostOfficeManagementComplianceTest.testComplianceLambda(NewPostOfficeManagementComplianceTest.java:74)
+
+testSortInGetBoxesByRecipient  Time elapsed: 0.002 s  <<< ERROR!
+java.lang.ClassCastException: class spoon.reflect.factory.ModuleFactory$CtUnnamedModule cannot be cast to class spoon.reflect.declaration.CtClass (spoon.reflect.factory.ModuleFactory$CtUnnamedModule and spoon.reflect.declaration.CtClass are in unnamed module of loader 'app')
+	at com.epam.rd.autotasks.collections.NewPostOfficeManagementComplianceTest.testSortInGetBoxesByRecipient(NewPostOfficeManagementComplianceTest.java:102)
+
+testOnlyComparatorFields  Time elapsed: 0.002 s  <<< ERROR!
+java.lang.ClassCastException: class spoon.reflect.factory.ModuleFactory$CtUnnamedModule cannot be cast to class spoon.reflect.declaration.CtField (spoon.reflect.factory.ModuleFactory$CtUnnamedModule and spoon.reflect.declaration.CtField are in unnamed module of loader 'app')
+	at com.epam.rd.autotasks.collections.NewPostOfficeManagementComplianceTest.testOnlyComparatorFields(NewPostOfficeManagementComplianceTest.java:89)
+
+testGetBoxByIdShouldNotContainAnyLoops  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.ClassCastException: class spoon.reflect.factory.ModuleFactory$CtUnnamedModule cannot be cast to class spoon.reflect.declaration.CtClass (spoon.reflect.factory.ModuleFactory$CtUnnamedModule and spoon.reflect.declaration.CtClass are in unnamed module of loader 'app')
+	at com.epam.rd.autotasks.collections.NewPostOfficeManagementComplianceTest.testGetBoxByIdShouldNotContainAnyLoops(NewPostOfficeManagementComplianceTest.java:130)
+

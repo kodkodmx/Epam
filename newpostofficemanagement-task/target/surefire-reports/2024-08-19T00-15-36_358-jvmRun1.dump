@@ -1,0 +1,69 @@
+# Created at 2024-08-19T00:15:37.141
+org.junit.platform.commons.JUnitException: TestEngine with ID 'archunit' failed to discover tests
+	at org.junit.platform.launcher.core.EngineDiscoveryOrchestrator.discoverEngineRoot(EngineDiscoveryOrchestrator.java:160)
+	at org.junit.platform.launcher.core.EngineDiscoveryOrchestrator.discoverSafely(EngineDiscoveryOrchestrator.java:132)
+	at org.junit.platform.launcher.core.EngineDiscoveryOrchestrator.discover(EngineDiscoveryOrchestrator.java:107)
+	at org.junit.platform.launcher.core.EngineDiscoveryOrchestrator.discover(EngineDiscoveryOrchestrator.java:78)
+	at org.junit.platform.launcher.core.DefaultLauncher.discover(DefaultLauncher.java:110)
+	at org.junit.platform.launcher.core.DefaultLauncher.discover(DefaultLauncher.java:78)
+	at org.junit.platform.launcher.core.DefaultLauncherSession$DelegatingLauncher.discover(DefaultLauncherSession.java:81)
+	at org.junit.platform.launcher.core.SessionPerRequestLauncher.discover(SessionPerRequestLauncher.java:46)
+	at org.apache.maven.surefire.junitplatform.TestPlanScannerFilter.accept(TestPlanScannerFilter.java:56)
+	at org.apache.maven.surefire.util.DefaultScanResult.applyFilter(DefaultScanResult.java:102)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.scanClasspath(JUnitPlatformProvider.java:143)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invoke(JUnitPlatformProvider.java:124)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+Caused by: com.tngtech.archunit.junit.internal.ArchTestInitializationException: java.lang.reflect.InvocationTargetException
+	at com.tngtech.archunit.junit.internal.ReflectionUtils.getValueOrThrowException(ReflectionUtils.java:93)
+	at com.tngtech.archunit.junit.internal.ArchUnitTestDescriptor.getValue(ArchUnitTestDescriptor.java:118)
+	at com.tngtech.archunit.junit.internal.ArchUnitTestDescriptor.resolveChildren(ArchUnitTestDescriptor.java:113)
+	at com.tngtech.archunit.junit.internal.ArchUnitTestDescriptor.lambda$resolveField$4(ArchUnitTestDescriptor.java:99)
+	at com.tngtech.archunit.junit.internal.ElementResolver.handleNewSegment(ElementResolver.java:126)
+	at com.tngtech.archunit.junit.internal.ElementResolver.resolve(ElementResolver.java:80)
+	at com.tngtech.archunit.junit.internal.ElementResolver$UnresolvedMember.ifUnresolved(ElementResolver.java:230)
+	at com.tngtech.archunit.junit.internal.ArchUnitTestDescriptor.resolveField(ArchUnitTestDescriptor.java:99)
+	at com.tngtech.archunit.junit.internal.ArchUnitTestDescriptor.lambda$createChildren$2(ArchUnitTestDescriptor.java:92)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at com.tngtech.archunit.junit.internal.ArchUnitTestDescriptor.createChildren(ArchUnitTestDescriptor.java:92)
+	at com.tngtech.archunit.junit.internal.ArchUnitTestDescriptor.createTestDescriptor(ArchUnitTestDescriptor.java:84)
+	at com.tngtech.archunit.junit.internal.ArchUnitTestDescriptor.lambda$resolve$0(ArchUnitTestDescriptor.java:69)
+	at com.tngtech.archunit.junit.internal.ElementResolver$RequestedButUnresolvedClass.ifRequestedButUnresolved(ElementResolver.java:202)
+	at com.tngtech.archunit.junit.internal.ArchUnitTestDescriptor.resolve(ArchUnitTestDescriptor.java:69)
+	at com.tngtech.archunit.junit.internal.ArchUnitTestEngine.lambda$resolveRequestedClasses$3(ArchUnitTestEngine.java:126)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:184)
+	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:179)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1708)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:151)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:174)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:596)
+	at com.tngtech.archunit.junit.internal.ArchUnitTestEngine.resolveRequestedClasses(ArchUnitTestEngine.java:126)
+	at com.tngtech.archunit.junit.internal.ArchUnitTestEngine.discover(ArchUnitTestEngine.java:88)
+	at org.junit.platform.launcher.core.EngineDiscoveryOrchestrator.discoverEngineRoot(EngineDiscoveryOrchestrator.java:152)
+	... 15 more
+Caused by: java.lang.reflect.InvocationTargetException
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:74)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at com.tngtech.archunit.base.ReflectionUtils.newInstanceOf(ReflectionUtils.java:32)
+	at com.tngtech.archunit.junit.internal.ReflectionUtils.newInstanceOf(ReflectionUtils.java:72)
+	at com.tngtech.archunit.junit.internal.ReflectionUtils.getValueOrThrowException(ReflectionUtils.java:90)
+	... 43 more
+Caused by: java.lang.Error: Unresolved compilation problems: 
+	The method getType() is undefined for the type CtElement
+	The method getType() is undefined for the type CtElement
+	The method getSimpleName() is undefined for the type CtElement
+	The method getAllClasses() is undefined for the type CtModel
+	The method getAllClasses() is undefined for the type CtModel
+
+	at com.epam.rd.autotasks.collections.NewPostOfficeManagementComplianceTest.<init>(NewPostOfficeManagementComplianceTest.java:83)
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	... 48 more
+
+
