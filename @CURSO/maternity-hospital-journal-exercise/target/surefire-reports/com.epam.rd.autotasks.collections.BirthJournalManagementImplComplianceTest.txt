@@ -1,0 +1,9 @@
+-------------------------------------------------------------------------------
+Test set: com.epam.rd.autotasks.collections.BirthJournalManagementImplComplianceTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 1.981 s <<< FAILURE! - in com.epam.rd.autotasks.collections.BirthJournalManagementImplComplianceTest
+testCompliance  Time elapsed: 0.729 s  <<< ERROR!
+java.lang.ClassCastException: class spoon.reflect.factory.ModuleFactory$CtUnnamedModule cannot be cast to class spoon.reflect.code.CtLambda (spoon.reflect.factory.ModuleFactory$CtUnnamedModule and spoon.reflect.code.CtLambda are in unnamed module of loader 'app')
+	at com.epam.rd.autotasks.collections.BirthJournalManagementImplComplianceTest.testComplianceLambda(BirthJournalManagementImplComplianceTest.java:53)
+	at com.epam.rd.autotasks.collections.BirthJournalManagementImplComplianceTest.testCompliance(BirthJournalManagementImplComplianceTest.java:100)
+
