@@ -1,0 +1,19 @@
+-------------------------------------------------------------------------------
+Test set: edu.epam.fop.io.ComplianceTest
+-------------------------------------------------------------------------------
+Tests run: 2, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 1.64 s <<< FAILURE! - in edu.epam.fop.io.ComplianceTest
+shouldUseTryWithResources  Time elapsed: 0.85 s  <<< FAILURE!
+java.lang.AssertionError: 
+Found usages of IO streams outside of try-with-resources:
+edu.epam.fop.io.LicenseReader.java:27
+
+
+edu.epam.fop.io.LicenseReader.java:44
+
+
+edu.epam.fop.io.LicenseReader.java:56
+
+
+edu.epam.fop.io.LicenseReader.java:56
+	at edu.epam.fop.io.ComplianceTest.shouldUseTryWithResources(ComplianceTest.java:121)
+
