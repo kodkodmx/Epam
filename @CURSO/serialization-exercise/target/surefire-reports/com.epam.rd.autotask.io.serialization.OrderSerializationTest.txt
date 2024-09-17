@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: com.epam.rd.autotask.io.serialization.OrderSerializationTest
+-------------------------------------------------------------------------------
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.043 s - in com.epam.rd.autotask.io.serialization.OrderSerializationTest

@@ -1,0 +1,9 @@
+-------------------------------------------------------------------------------
+Test set: com.epam.rd.autotask.io.serialization.ComplianceTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.01 s <<< FAILURE! - in com.epam.rd.autotask.io.serialization.ComplianceTest
+testCompliance  Time elapsed: 0.009 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: 'ItemCharacteristic' must not implement 'Serializable' ==> expected: <true> but was: <false>
+	at com.epam.rd.autotask.io.serialization.ComplianceTest.testComplianceItemCharacteristic(ComplianceTest.java:51)
+	at com.epam.rd.autotask.io.serialization.ComplianceTest.testCompliance(ComplianceTest.java:19)
+
